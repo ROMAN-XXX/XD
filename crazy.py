@@ -240,21 +240,21 @@ d8888b.  .d8b.  d8888b. db    db d88888b    d88b
 def menu():
 	os.system('clear')
 	banner()
-	_SAMIR_(f'\033[1;92m[\033[1;34m1\033[1;92m] FILE CLONE')
-	_SAMIR_(f'\033[1;92m[\033[1;92m\033[1;34m2\033[1;92m] RANDOM CLONE')
-	_SAMIR_(f'\033[1;92m[\033[1;92m\033[1;34m3\033[1;92m] EMAIL CLONE')
-	_SAMIR_(f'[\033[1;92m\033[1;34m4\033[1;92m] CONTACT ME')
-	_SAMIR_(f'\033[1;92m[\033[1;34m0\033[1;92m]\033[0;91m EXIT')
-	_____SAMIR_____ = input('\033[1;92m[\033[1;34m🙂\033[1;92m]\033[0;92mCHOOSE :\x1b[1;92m ')
-	if _____SAMIR_____ in ['1']:
+	_PARVEJ_(f'\033[1;92m[\033[1;34m1\033[1;92m] FILE CLONE')
+	_PARVEJ_(f'\033[1;92m[\033[1;92m\033[1;34m2\033[1;92m] RANDOM CLONE')
+	_PARVEJ_(f'\033[1;92m[\033[1;92m\033[1;34m3\033[1;92m] EMAIL CLONE')
+	_PARVEJ_(f'[\033[1;92m\033[1;34m4\033[1;92m] CONTACT ME')
+	_PARVEJ_(f'\033[1;92m[\033[1;34m0\033[1;92m]\033[0;91m EXIT')
+	_____PARVEJ_____ = input('\033[1;92m[\033[1;34m🙂\033[1;92m]\033[0;92mCHOOSE :\x1b[1;92m ')
+	if _____PARVEJ_____ in ['1']:
 		C1()
-	if _____SAMIR_____ in ['2']:
+	if _____PARVEJ_____ in ['2']:
 		Y2()
-	if _____SAMIR_____ in ['3']:
+	if _____PARVEJ_____ in ['3']:
 		BER()
-	if _____SAMIR_____ in ['4']:
+	if _____PARVEJ_____ in ['4']:
 		os.system("xdg-open https://www.facebook.com/profile.php?id=100086442349803 ")
-	if _____SAMIR_____ in ['0']:
+	if _____PARVEJ_____ in ['0']:
 		exit()
 	
 		
@@ -585,7 +585,7 @@ def rcerek(uid,pwx,tl):
      pass
 
 
-def SAMIR(uid,pwv,tl):
+def PARVEJ(uid,pwv,tl):
     global loop
     global cps
     global oks
